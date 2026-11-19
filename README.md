@@ -351,3 +351,84 @@ PPT presentation
 Source code, report and PPT
 
  Submit project requirements
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🛍️ Online Shopping Store</h1>
+    <div>Cart: <span id="cart-count">0</span></div>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#cart">Shopping Cart</a>
+</nav>
+
+<section class="banner">
+    <h2>Welcome to Our Shopping Store</h2>
+    <p>Shop Your Favourite Products Online!</p>
+</section>
+
+<h2 class="heading" id="products">Our Products</h2>
+
+<div class="products">
+
+    <div class="product">
+        <img src="https://placehold.co/200x150?text=Shoes">
+        <h3>Sports Shoes</h3>
+        <p>₹1,500</p>
+        <button onclick="addToCart('Sports Shoes',1500)">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product">
+        <img src="https://placehold.co/200x150?text=Watch">
+        <h3>Smart Watch</h3>
+        <p>₹2,000</p>
+        <button onclick="addToCart('Smart Watch',2000)">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product">
+        <img src="https://placehold.co/200x150?text=Headphones">
+        <h3>Headphones</h3>
+        <p>₹999</p>
+        <button onclick="addToCart('Headphones',999)">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product">
+        <img src="https://placehold.co/200x150?text=Bag">
+        <h3>Travel Bag</h3>
+        <p>₹1,200</p>
+        <button onclick="addToCart('Travel Bag',1200)">
+            Add to Cart
+        </button>
+    </div>
+
+</div>
+
+<section id="cart">
+    <h2>Shopping Cart</h2>
+    <div id="cart-items"></div>
+    <h3>Total: ₹<span id="total">0</span></h3>
+    <button onclick="checkout()">Place Order</button>
+</section>
+
+<footer>
+    <p>© 2026 Online Shopping Store</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
